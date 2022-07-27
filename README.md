@@ -14,6 +14,19 @@ When both S0 and S1 are low, data shifts left synchronously and new data is ente
 When both S0 and S1 are high, the data inside the bidirectional shift  register does not change. 
 Synchronous active high clear signal is used to reset the bidirectional shift register. 
 
+##Input and output signals
+Input signals include:
+1. 2 bit select signal
+2. 1 bit clock signal
+3. 1 bit reset signal
+4. 8 bit input signal
+
+Output signals include:
+1. 8 
+
+## Circuit Diagram of n-bit univversal shift register
+![circuit diagram](https://media.geeksforgeeks.org/wp-content/uploads/USR12.png)
+
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 `$ git clone https://github.com/rakshit-23/iiitb_usr`
 
