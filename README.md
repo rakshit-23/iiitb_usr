@@ -27,7 +27,7 @@ Output signals include:
 1. 8 bit output signal
 
 ## Circuit Diagram of n-bit universal shift register
-![circuit diagram](https://media.geeksforgeeks.org/wp-content/uploads/USR12.png)
+![download](https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png)
 
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 
