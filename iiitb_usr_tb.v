@@ -1,13 +1,12 @@
 `timescale 1ns / 1ps
 
 module iiitb_usr_tb;
-    parameter MSB=8;
-    reg [MSB-1:0] data_in;
-    wire [MSB-1:0] data_out;
-    reg clear,clock;
+    reg [7:0] data_in;
+    wire [7:0] data_out;
+    reg clear,clock,sl_ser,sr_ser;
     reg [1:0] select;
     
-    iiitb_usr #(MSB) usr(data_in,data_out,clock,clear,select);
+    iiitb_usr usr(data_in,data_out,clock,clear,select,sl_ser,sr_ser);
     
     initial
     begin
@@ -17,6 +16,8 @@ module iiitb_usr_tb;
         clock=0;
         clear=1;    //clear
         data_in=8'b10101011;
+        sl_ser=1'b1;
+        sr_ser=1'b1;
         select=2'b01;   //right shift
         #6
         clear=0;
