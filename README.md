@@ -28,6 +28,7 @@ Output signals include:
 ![circuit diagram](https://media.geeksforgeeks.org/wp-content/uploads/USR12.png)
 
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
+
 `$ git clone https://github.com/rakshit-23/iiitb_usr`
 
 `$ cd iiitb_usr/`
