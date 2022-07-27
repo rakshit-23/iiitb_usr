@@ -14,12 +14,12 @@ module iiitb_usr  (data_in,data_out,clock,clear,select,sl_ser,sr_ser
         begin 
             if(select==2'b00)   //Shift left
                 data_out<={data_out[6:0],sl_ser};
-            else if(select==2'b01)
-                data_out<={sr_ser,data_out[7:1]};
-            else if(select==2'b10)
+            else if(select==2'b01)  //Shift right
+                data_out<={sr_ser,data_out[7:1]}; 
+            else if(select==2'b10)  // Parallel load
                 data_out<=data_in;
             else
-                data_out<=data_out;
+                data_out<=data_out; //Temporary storage
          end
     end
     
