@@ -12,8 +12,7 @@ Parallel synchronous loading is accomplished by applying the four bits of data a
 Shift right is accomplished synchronously with the rising edge of the clock pulse when S0 is high and S1 is low. Serial data for this mode is entered at the shift-right data input. 
 When both S0 and S1 are low, data shifts left synchronously and new data is entered at the shift-left serial inputs. 
 When both S0 and S1 are high, the data inside the bidirectional shift  register does not change. 
-Synchronous active high clear signal is used to
-reset the bidirectional shift register. 
+Synchronous active high clear signal is used to reset the bidirectional shift register. 
 
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 `$ git clone https://github.com/rakshit-23/iiitb_usr`
