@@ -29,6 +29,10 @@ Output signals include:
 ## Circuit Diagram of n-bit universal shift register
 ![download](https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png)
 
+## Simulation waveform of the design
+![simulation](https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png)
+
+## Steps for cloning the repository
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 
 
