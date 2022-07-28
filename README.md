@@ -70,6 +70,6 @@ To clone the repository and download the netlist files for simulation, enter the
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 
 ## Contact information
-- Rakshit Bhatia-rakshit2325@gmail.com
-- Kunal Ghosh- kunalghosh@gmail.com
+- Rakshit Bhatia- rakshit2325@gmail.com
+- Kunal Ghosh-  kunalghosh@gmail.com
 
