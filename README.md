@@ -32,7 +32,22 @@ Output signals include:
 ## Simulation waveform of the design
 ![simulation](https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png)
 
-## Steps for cloning the repository
+## Steps to install iverilog and GTKwave
+
+### About iverilog
+Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the `vvp` command. For synthesis, the compiler generates netlists in the desired format.
+
+### About GTKWave
+GTKWave is a fully featured GTK+ based wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing.
+
+### Installing iverilog and GTKWave in ubuntu
+Open your terminal and type the following to install iverilog and GTKWave
+
+`$   sudo apt get update`
+
+`$   sudo apt get install iverilog gtkwave`
+
+## Steps for cloning the repository ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 
 
@@ -47,3 +62,5 @@ To clone the repository and download the netlist files for simulation, enter the
 `$ ./a.out`
 
 `$ gtkwave iiitb_usr_out.vcd`
+
+
