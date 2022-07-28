@@ -64,8 +64,12 @@ To clone the repository and download the netlist files for simulation, enter the
 `$ gtkwave iiitb_usr_out.vcd`
 
 ## Authour
-- Rakshit Bhatia
+- Rakshit Bhatia, M.Tech student at IIIT Bangalore.
 
 ## Acknowledgements
-- Kunal Ghosh
+- Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+
+## Contact information
+- Rakshit Bhatia-rakshit2325@gmail.com
+- Kunal Ghosh- kunalghosh@gmail.com
 
