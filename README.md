@@ -64,4 +64,8 @@ To clone the repository and download the netlist files for simulation, enter the
 `$ gtkwave iiitb_usr_out.vcd`
 
 ## Authour
+- Rakshit Bhatia
+
+## Acknowledgements
+- Kunal Ghosh
 
