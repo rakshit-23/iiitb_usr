@@ -32,7 +32,7 @@ Output signals include:
 ## RTL simulation waveform of the design
 ![simulation](https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png)
 
-## Yosys commands for gate level synthesis using SKY130 process node and the PDK
+## Yosys commands for gate level synthesis using SKY130 process node and PDK
 ```
 read_verilog iiitb_usr.v
 synth -top iiitb_usr
