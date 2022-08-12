@@ -44,9 +44,12 @@ flatten
 write_verilog -noattr iiitb_usr_synth.v
 stat 
 ```
-## Physical Cells used from the target architecture:
+## Physical Cells used from the target architecture
+![stat](https://user-images.githubusercontent.com/110079890/184287089-1c3d1a84-779a-4789-841e-7c4f77607469.png)
 
 
+## Gate level simulation waveform
+![GLS](https://user-images.githubusercontent.com/110079890/184287210-92a4ef12-85fd-4cfe-90ca-0e15dc00c511.png)
 
 
 
