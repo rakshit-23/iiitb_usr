@@ -61,6 +61,9 @@ stat
    
    Y = !((A1 | A2) & !B1_N)
 
+## Synthesized netlist of the RTL design
+![synthesized_netlist](https://user-images.githubusercontent.com/110079890/184321918-dce53f88-f723-49f5-b684-2208f6b71f65.png)
+
 
 
 ## Gate level simulation waveform of the design
