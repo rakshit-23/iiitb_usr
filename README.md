@@ -29,7 +29,7 @@ Output signals include:
 ## Circuit Diagram of n-bit universal shift register
 ![download](https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png)
 
-## Functional simulation waveform of the design
+## RTL simulation waveform of the design
 ![simulation](https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png)
 
 ## Yosys commands for gate level synthesis using SKY130 process node and the PDK
@@ -63,9 +63,10 @@ stat
 
 
 
-## Gate level simulation waveform
-![GLS](https://user-images.githubusercontent.com/110079890/184287210-92a4ef12-85fd-4cfe-90ca-0e15dc00c511.png)
+## Gate level simulation waveform of the design
+![GLS](https://user-images.githubusercontent.com/110079890/184289638-2aac193f-77d4-476b-9a7e-1472b15da076.png)
 
+The gate level simulation waveform matches with the RTL simulation waveform.
 
 
 
