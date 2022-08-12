@@ -47,6 +47,21 @@ stat
 ## Physical Cells used from the target architecture
 ![stat](https://user-images.githubusercontent.com/110079890/184287089-1c3d1a84-779a-4789-841e-7c4f77607469.png)
 
+ - a31oi: 3-input AND into first input of 2-input NOR.
+
+   Y = !((A1 & A2 & A3) | B1)
+ - dfxtp: Delay flop, single output.
+ - nand2: 2-input NAND.
+ - nand3b: 3-input NAND, first input inverted.
+ - nor2: 2-input NOR.
+ - o21ai: 2-input OR into first input of 2-input NAND.
+ 
+   Y = !((A1 | A2) & B1)
+ - o21bai: 2-input OR into first input of 2-input NAND, 2nd input inverted.
+   
+   Y = !((A1 | A2) & !B1_N)
+
+
 
 ## Gate level simulation waveform
 ![GLS](https://user-images.githubusercontent.com/110079890/184287210-92a4ef12-85fd-4cfe-90ca-0e15dc00c511.png)
@@ -54,13 +69,21 @@ stat
 
 
 
-## Steps to install iverilog and GTKwave
+## Steps to install iverilog, GTKwave and Yosys
 
 ### About iverilog
 Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the `vvp` command. For synthesis, the compiler generates netlists in the desired format.
 
 ### About GTKWave
 GTKWave is a fully featured GTK+ based wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing.
+
+### About Yosys
+Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Selected features and typical applications:
+
+- Process almost any synthesizable Verilog-2005 design
+- Built-in formal methods for checking properties and equivalence
+- Mapping to ASIC standard cell libraries (in Liberty File Format)
+- Mapping to Xilinx 7-Series and Lattice iCE40 and ECP5 FPGAs
 
 ### Installing iverilog and GTKWave in ubuntu
 Open your terminal and type the following to install iverilog and GTKWave
