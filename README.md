@@ -163,6 +163,7 @@ $ iverilog iiitb_usr.v iiitb_usr_tb.v
 $ ./a.out
 $ gtkwave iiitb_usr_out.vcd
 ```
+## Generated layout using OpenLane
 
 ## Authour
 - Rakshit Bhatia, M.Tech student at IIIT Bangalore.
