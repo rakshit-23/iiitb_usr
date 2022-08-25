@@ -32,6 +32,30 @@ Output signals include:
 ## RTL simulation waveform of the design
 ![simulation](https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png)
 
+## Steps to install iverilog, GTKwave and Yosys
+
+### About iverilog
+Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the `vvp` command. For synthesis, the compiler generates netlists in the desired format.
+
+### About GTKWave
+GTKWave is a fully featured GTK+ based wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing.
+
+### About Yosys
+Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Selected features and typical applications:
+
+- Process almost any synthesizable Verilog-2005 design
+- Built-in formal methods for checking properties and equivalence
+- Mapping to ASIC standard cell libraries (in Liberty File Format)
+- Mapping to Xilinx 7-Series and Lattice iCE40 and ECP5 FPGAs
+
+### Installing iverilog and GTKWave in ubuntu
+Open your terminal and type the following to install iverilog and GTKWave
+
+`$   sudo apt get update`
+
+`$   sudo apt get install iverilog gtkwave`
+
+
 ## Yosys commands for gate level synthesis using SKY130 process node and PDK
 ```
 read_verilog iiitb_usr.v
@@ -65,36 +89,12 @@ stat
 ![synthesized_netlist](https://user-images.githubusercontent.com/110079890/184321918-dce53f88-f723-49f5-b684-2208f6b71f65.png)
 
 
-
 ## Gate level simulation waveform of the design
 ![GLS](https://user-images.githubusercontent.com/110079890/184289638-2aac193f-77d4-476b-9a7e-1472b15da076.png)
 
 The gate level simulation waveform matches with the RTL simulation waveform.
 
 
-
-## Steps to install iverilog, GTKwave and Yosys
-
-### About iverilog
-Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the `vvp` command. For synthesis, the compiler generates netlists in the desired format.
-
-### About GTKWave
-GTKWave is a fully featured GTK+ based wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing.
-
-### About Yosys
-Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Selected features and typical applications:
-
-- Process almost any synthesizable Verilog-2005 design
-- Built-in formal methods for checking properties and equivalence
-- Mapping to ASIC standard cell libraries (in Liberty File Format)
-- Mapping to Xilinx 7-Series and Lattice iCE40 and ECP5 FPGAs
-
-### Installing iverilog and GTKWave in ubuntu
-Open your terminal and type the following to install iverilog and GTKWave
-
-`$   sudo apt get update`
-
-`$   sudo apt get install iverilog gtkwave`
 
 ## Steps for cloning the repository ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
