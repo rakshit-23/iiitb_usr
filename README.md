@@ -164,9 +164,7 @@ $   ./flow.tcl -design iiitb_pwm_gen
 
 ## Steps for cloning the repository ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
-
-
-
+```
 $ sudo apt install git
 $ git clone https://github.com/rakshit-23/iiitb_usr
 $ cd iiitb_usr/
@@ -174,7 +172,6 @@ $ iverilog iiitb_usr.v iiitb_usr_tb.v
 $ ./a.out
 $ gtkwave iiitb_usr_out.vcd
 ```
-## Generated layout using OpenLane
 
 ## Authour
 - Rakshit Bhatia, M.Tech student at IIIT Bangalore.
