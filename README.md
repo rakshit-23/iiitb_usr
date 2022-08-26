@@ -94,11 +94,17 @@ stat
    Y = !((A1 | A2) & !B1_N)
 
 ## Synthesized netlist of the RTL design
-![synthesized_netlist](https://user-images.githubusercontent.com/110079890/184321918-dce53f88-f723-49f5-b684-2208f6b71f65.png)
+<p align="center">
+  <img width="1000" height="1000" src="https://user-images.githubusercontent.com/110079890/184321918-dce53f88-f723-49f5-b684-2208f6b71f65.png">
+</p>
+
 
 
 ## Gate level simulation waveform of the design
-![GLS](https://user-images.githubusercontent.com/110079890/184289638-2aac193f-77d4-476b-9a7e-1472b15da076.png)
+<p align="center">
+  <img width="1500" height="250" src="https://user-images.githubusercontent.com/110079890/186837236-1ebdda62-128c-443c-b684-5d41efd41e4b.png">
+</p>
+
 
 The gate level simulation waveform matches with the RTL simulation waveform.
 
@@ -160,7 +166,10 @@ $   ./flow.tcl -design iiitb_pwm_gen
 ```
 
 ### Generated layout using Magic 
-![layout](https://user-images.githubusercontent.com/110079890/186833541-c5457f0f-eb92-4589-93be-4d4895be3aef.png)
+<p align="center">
+  <img width="800" height="700" src="https://user-images.githubusercontent.com/110079890/186833541-c5457f0f-eb92-4589-93be-4d4895be3aef.png">
+</p>
+
 
 
 
