@@ -27,10 +27,16 @@ Output signals include:
 1. 8 bit output signal
 
 ## Circuit Diagram of n-bit universal shift register
-![download](https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png)<p align="center">
+<p align="center">
+  <img width="1000" height="500" src="https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png">
+</p>
+
 
 ## RTL simulation waveform of the design
-![simulation](https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png)
+<p align="center">
+  <img width="1500" height="500" src="https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png">
+</p>
+![simulation]()
 
 ## Steps to install iverilog, GTKwave and Yosys
 
