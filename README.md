@@ -36,7 +36,6 @@ Output signals include:
 <p align="center">
   <img width="1500" height="500" src="https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png">
 </p>
-![simulation]()
 
 ## Steps to install iverilog, GTKwave and Yosys
 
@@ -57,9 +56,10 @@ Yosys is a framework for Verilog RTL synthesis. It currently has extensive Veril
 ### Installing iverilog and GTKWave in ubuntu
 Open your terminal and type the following to install iverilog and GTKWave
 
-`$   sudo apt get update`
-
-`$   sudo apt get install iverilog gtkwave`
+```
+$   sudo apt get update
+$   sudo apt get install iverilog gtkwave
+```
 
 
 ## Yosys commands for gate level synthesis using SKY130 process node and PDK
@@ -165,12 +165,12 @@ $   ./flow.tcl -design iiitb_pwm_gen
 ## Steps for cloning the repository ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 ```
-$ sudo apt install git
-$ git clone https://github.com/rakshit-23/iiitb_usr
-$ cd iiitb_usr/
-$ iverilog iiitb_usr.v iiitb_usr_tb.v
-$ ./a.out
-$ gtkwave iiitb_usr_out.vcd
+$  sudo apt install git
+$  git clone https://github.com/rakshit-23/iiitb_usr
+$  cd iiitb_usr/
+$  iverilog iiitb_usr.v iiitb_usr_tb.v
+$  ./a.out
+$  gtkwave iiitb_usr_out.vcd
 ```
 
 ## Authour
