@@ -151,7 +151,7 @@ $   sudo make mount
 $   ./flow.tcl -design iiitb_pwm_gen
 
 ### Generated layout using Magic 
-![layout](https://user-images.githubusercontent.com/110079890/186833541-c5457f0f-eb92-4589-93be-4d4895be3aef.png)
+ ![layout](https://user-images.githubusercontent.com/110079890/186833541-c5457f0f-eb92-4589-93be-4d4895be3aef.png)
 
 
 
