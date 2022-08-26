@@ -75,7 +75,9 @@ write_verilog -noattr iiitb_usr_synth.v
 stat 
 ```
 ## Physical Cells used from the target architecture
-![stat](https://user-images.githubusercontent.com/110079890/184287089-1c3d1a84-779a-4789-841e-7c4f77607469.png)
+<p align="center">
+  <img width="500" height="500" src="https://user-images.githubusercontent.com/110079890/184287089-1c3d1a84-779a-4789-841e-7c4f77607469.png">
+</p>
 
  - a31oi: 3-input AND into first input of 2-input NOR.
 
