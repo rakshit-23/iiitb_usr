@@ -34,7 +34,7 @@ Output signals include:
 
 ## RTL simulation waveform of the design
 <p align="center">
-  <img width="1500" height="500" src="https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png">
+  <img width="1500" height="300" src="https://user-images.githubusercontent.com/110079890/186836636-899a7104-62f5-4afb-9980-5eefb45903ab.png">
 </p>
 
 ## Steps to install iverilog, GTKwave and Yosys
