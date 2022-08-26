@@ -102,7 +102,7 @@ stat
 
 ## Gate level simulation waveform of the design
 <p align="center">
-  <img width="1500" height="250" src="https://user-images.githubusercontent.com/110079890/186837236-1ebdda62-128c-443c-b684-5d41efd41e4b.png">
+  <img width="2000" height="250" src="https://user-images.githubusercontent.com/110079890/186837236-1ebdda62-128c-443c-b684-5d41efd41e4b.png">
 </p>
 
 
