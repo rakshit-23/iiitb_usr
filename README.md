@@ -27,7 +27,7 @@ Output signals include:
 1. 8 bit output signal
 
 ## Circuit Diagram of n-bit universal shift register
-<p align="center">![download](https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png)
+![download](https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png)<p align="center">
 
 ## RTL simulation waveform of the design
 ![simulation](https://user-images.githubusercontent.com/110079890/181254322-da4f5702-8428-44ac-814a-b53fe5a81f4f.png)
