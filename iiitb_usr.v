@@ -8,7 +8,7 @@ module iiitb_usr  (data_in,data_out,clock,clear,select,sl_ser,sr_ser
     
     always@(posedge clock)
     begin
-        if(clear==1'b1)
+        if(clear==1'b1)   //Synchronous high reset
             data_out<=8'b00000000;
         else
         begin 
