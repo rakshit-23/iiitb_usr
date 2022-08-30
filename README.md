@@ -191,6 +191,13 @@ run_placement
 ```
 ![p4_fp_pl](https://user-images.githubusercontent.com/110079890/187419699-6013b524-91fa-4498-a408-477eee1ea54a.png)
 
+To view the floorplan, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/floorplan'
+```
+magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
+```
+![p5_floorplan](https://user-images.githubusercontent.com/110079890/187430936-69663863-457c-4f8f-aefc-8851d3613b0f.png)
+
+
 To view the placement, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/placement'
 
 ```
