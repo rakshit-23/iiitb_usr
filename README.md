@@ -154,12 +154,16 @@ $   sudo make install
 Our objective is to extract LEF from the given layout of inverter in standard format. To do so follow the following steps:
 1. Clone the vsdstdcelldesign github using the following command
 
-```git clone https://github.com/nickson-jose/vsdstdcelldesign)```
+```
+$ git clone https://github.com/nickson-jose/vsdstdcelldesign)
+```
 
 2. Copy the sky130A.tech from the folder /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic and paste it into the cloned directory.
 
 3. Open the inverter magic layout using the command
-``` magic -T sky130A.tech sky130_inv.mag ```
+``` 
+$ magic -T sky130A.tech sky130_inv.mag
+```
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187485641-e9eb45c9-6003-4e65-a6f4-eab80ab8712a.png">
 </p>
@@ -211,7 +215,7 @@ port class inout
 port use ground
 ```
 
-8. Generate the lef file by typing the following command
+8. Generate the lef file by typing the following command in tkcon:
 ```
 lef write
 ```
