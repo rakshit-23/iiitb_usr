@@ -284,3 +284,5 @@ https://yosyshq.net/yosys/
 4. Open Circuit Design, "Magic install" http://opencircuitdesign.com/magic/install.html
 
 5. GTKWave http://gtkwave.sourceforge.net/
+
+6. Icarus Verilog http://iverilog.icarus.com/ 
