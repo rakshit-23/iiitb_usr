@@ -271,6 +271,7 @@ $  gtkwave iiitb_usr_out.vcd
 ## Contact information
 - Rakshit Bhatia- rakshit2325@gmail.com
 - Kunal Ghosh-  kunalghosh@gmail.com
+- Madhav Rao- mr@iiitb.ac.in
 
 ## References
 1. GeeksforGeeks, "Universal Shift Register" 
