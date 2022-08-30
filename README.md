@@ -123,7 +123,7 @@ Now clone the OpenLane git repository:
 $   git clone https://github.com/The-OpenROAD-Project/OpenLane.git
 $   cd OpenLane/
 $   sudo make
-$ sudo make test
+$   sudo make test
 ```
 
 #### Magic
@@ -182,7 +182,7 @@ The following cells were mapped from the library.
 
 ![p3_synth_stat](https://user-images.githubusercontent.com/110079890/187417863-d206d8f5-e0b2-4315-9b2f-3864bce3add7.png)
 
-Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist generated.
+The inverter `sky130_vsdinv` is present in the generated netlist.
 
 6. To run the floorplan and the placement, type the following commands
 ```
