@@ -286,3 +286,5 @@ https://yosyshq.net/yosys/
 5. GTKWave http://gtkwave.sourceforge.net/
 
 6. Icarus Verilog http://iverilog.icarus.com/ 
+
+7. The OpenRoad Project, "OpenLane" https://github.com/The-OpenROAD-Project/OpenLane
