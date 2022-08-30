@@ -177,7 +177,7 @@ $   magic -T sky130A.tech sky130_inv.mag
 </p>
 
 <p align="center">
-  <img  src="https://user-images.githubusercontent.com/110079890/187486071-5458d7c8-88c3-4a95-bf3c-9f0fd1c753ae.png">
+  <img  src="https://user-images.githubusercontent.com/110079890/187491099-53dcbd1f-a389-425b-819a-25f7fdae4d0c.png">
 </p>
 
 
