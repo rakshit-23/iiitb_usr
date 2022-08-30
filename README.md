@@ -39,13 +39,13 @@ Output signals include:
 
 ## 5. Steps to install iverilog, GTKwave and Yosys
 
-### About iverilog
+### 5.1 About iverilog
 Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the `vvp` command. For synthesis, the compiler generates netlists in the desired format.
 
-### About GTKWave
+### 5.2 About GTKWave
 GTKWave is a fully featured GTK+ based wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing.
 
-### About Yosys
+### 5.3 About Yosys
 Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains. Selected features and typical applications:
 
 - Process almost any synthesizable Verilog-2005 design
@@ -53,7 +53,7 @@ Yosys is a framework for Verilog RTL synthesis. It currently has extensive Veril
 - Mapping to ASIC standard cell libraries (in Liberty File Format)
 - Mapping to Xilinx 7-Series and Lattice iCE40 and ECP5 FPGAs
 
-### Installing iverilog and GTKWave in ubuntu
+### 5.4 Installing iverilog and GTKWave in ubuntu
 Open your terminal and type the following to install iverilog and GTKWave
 
 ```
@@ -74,7 +74,7 @@ flatten
 write_verilog -noattr iiitb_usr_synth.v
 stat 
 ```
-### Physical Cells used from the target architecture
+### 6.1 Physical Cells used from the target architecture
 <p align="center">
   <img width="500" height="500" src="https://user-images.githubusercontent.com/110079890/184287089-1c3d1a84-779a-4789-841e-7c4f77607469.png">
 </p>
@@ -109,10 +109,10 @@ stat
 The gate level simulation waveform matches with the RTL simulation waveform.
 
 ## 9. Steps to install OpenLane
-### Openlane
+### 9.1 Openlane
 OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
-### Installation instructions 
+### 9.2 Installation instructions 
 ```
 $   apt install -y build-essential python3 python3-venv python3-pip
 ```
@@ -126,7 +126,7 @@ $   sudo make
 $   sudo make test
 ```
 
-### Magic
+### 9.3 Magic
 Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies. The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.
 
 
@@ -250,7 +250,7 @@ run_routing
 </p>
 
 
-## Steps for cloning the repository ubuntu
+## 11. Steps for cloning the repository ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 ```
 $  sudo apt install git
