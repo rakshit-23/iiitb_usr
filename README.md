@@ -179,10 +179,27 @@ run_synthesis
 The synthesized netlist can be seen in '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/synthesis'
 
 The following cells were mapped from the library.
+
 ![p3_synth_stat](https://user-images.githubusercontent.com/110079890/187417863-d206d8f5-e0b2-4315-9b2f-3864bce3add7.png)
+
 Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist generated.
 
 6. To run the floorplan and the placement type the following commands
+```
+run_floorplan
+run_placement
+```
+![p4_fp_pl](https://user-images.githubusercontent.com/110079890/187419699-6013b524-91fa-4498-a408-477eee1ea54a.png)
+
+To view the placement type the following command in /home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/placement
+
+```
+magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
+```
+![p7_placement_vsdinv](https://user-images.githubusercontent.com/110079890/187421437-15ffa5d4-8c68-43e6-bfe7-3b22f557882c.png)
+![p6_placement](https://user-images.githubusercontent.com/110079890/187421492-08e3efe3-cf50-40d0-aa92-35f1da903856.png)
+
+7. 
 
 
 ## Steps for cloning the repository ubuntu
