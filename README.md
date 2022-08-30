@@ -150,7 +150,7 @@ $   ./configure
 $   sudo make
 $   sudo make install
 ```
-## Running the design in OpenLane
+## Running the design in OpenLane using interactive mode
 To run the design in OpenLane:
 1. Create a folder named iiitb_usr in designs folder of OpenLane.
 
