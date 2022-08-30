@@ -1,6 +1,6 @@
 # iiitb_usr- Universal Shift Register
 
-## Description
+## 1. Description
 
 The universal shift register features parallel load, left-shift and right-shift serial input, and synchronous active high reset. The registers have 4 modes of operation out of which 1 is operational according to the select lines. The 4 modes of operation are:
 1. Shift left
@@ -14,7 +14,7 @@ When both S0 and S1 are low, data shifts left synchronously and new data is ente
 When both S0 and S1 are high, the data inside the bidirectional shift  register does not change. 
 Synchronous active high clear signal is used to reset the bidirectional shift register. 
 
-## Input and output signals
+## 2. Input and output signals
 Input signals include:
 1. 2 bit select signal
 2. 1 bit clock signal
@@ -26,18 +26,18 @@ Input signals include:
 Output signals include:
 1. 8 bit output signal
 
-## Circuit Diagram of n-bit universal shift register
+## 3. Circuit Diagram of n-bit universal shift register
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/110079890/181252796-ff3f8513-397c-4ede-be52-f3030a6f2c22.png">
 </p>
 
 
-## RTL simulation waveform of the design
+## 4. RTL simulation waveform of the design
 <p align="center">
   <img width="1500" height="300" src="https://user-images.githubusercontent.com/110079890/186836636-899a7104-62f5-4afb-9980-5eefb45903ab.png">
 </p>
 
-## Steps to install iverilog, GTKwave and Yosys
+## 5. Steps to install iverilog, GTKwave and Yosys
 
 ### About iverilog
 Icarus Verilog is a Verilog simulation and synthesis tool. It operates as a compiler, compiling source code written in Verilog (IEEE-1364) into some target format. For batch simulation, the compiler can generate an intermediate form called vvp assembly. This intermediate form is executed by the `vvp` command. For synthesis, the compiler generates netlists in the desired format.
@@ -62,7 +62,7 @@ $   sudo apt get install iverilog gtkwave
 ```
 
 
-## Yosys commands for gate level synthesis using SKY130 process node and PDK
+## 6. Yosys commands for gate level synthesis using SKY130 process node and PDK
 ```
 read_verilog iiitb_usr.v
 synth -top iiitb_usr
@@ -74,7 +74,7 @@ flatten
 write_verilog -noattr iiitb_usr_synth.v
 stat 
 ```
-## Physical Cells used from the target architecture
+### Physical Cells used from the target architecture
 <p align="center">
   <img width="500" height="500" src="https://user-images.githubusercontent.com/110079890/184287089-1c3d1a84-779a-4789-841e-7c4f77607469.png">
 </p>
@@ -93,14 +93,14 @@ stat
    
    Y = !((A1 | A2) & !B1_N)
 
-## Synthesized netlist of the RTL design
+##  7. Synthesized netlist of the RTL design
 <p align="center">
   <img width="1000" height="1000" src="https://user-images.githubusercontent.com/110079890/184321918-dce53f88-f723-49f5-b684-2208f6b71f65.png">
 </p>
 
 
 
-## Gate level simulation waveform of the design
+## 8. Gate level simulation waveform of the design
 <p align="center">
   <img width="2000" height="250" src="https://user-images.githubusercontent.com/110079890/186837236-1ebdda62-128c-443c-b684-5d41efd41e4b.png">
 </p>
@@ -108,11 +108,11 @@ stat
 
 The gate level simulation waveform matches with the RTL simulation waveform.
 
-## Physical Design from RTL to GDSII using Openlane
-#### Openlane
+## 9. Physical Design from RTL to GDSII using Openlane
+### Openlane
 OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, CU-GR, Klayout and a number of custom scripts for design exploration and optimization. The flow performs full ASIC implementation steps from RTL all the way down to GDSII.
 
-#### Installation instructions 
+### Installation instructions 
 ```
 $   apt install -y build-essential python3 python3-venv python3-pip
 ```
@@ -126,7 +126,7 @@ $   sudo make
 $   sudo make test
 ```
 
-#### Magic
+### Magic
 Magic is a venerable VLSI layout tool, written in the 1980's at Berkeley by John Ousterhout, now famous primarily for writing the scripting interpreter language Tcl. Due largely in part to its liberal Berkeley open-source license, magic has remained popular with universities and small companies. The open-source license has allowed VLSI engineers with a bent toward programming to implement clever ideas and help magic stay abreast of fabrication technology. However, it is the well thought-out core algorithms which lend to magic the greatest part of its popularity. Magic is widely cited as being the easiest tool to use for circuit layout, even for people who ultimately rely on commercial tools for their product design flow.
 
 
