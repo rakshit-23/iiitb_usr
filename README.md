@@ -224,7 +224,9 @@ magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef re
 ```
 run_cts
 ```
-![p8_cts](https://user-images.githubusercontent.com/110079890/187421918-d8e3801c-c69c-4f44-b55f-0543de5afb1f.png)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187421918-d8e3801c-c69c-4f44-b55f-0543de5afb1f.png">
+</p>
 
 The netlist with clock buffers can be seen in the folder  '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/cts'
 
