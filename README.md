@@ -169,14 +169,14 @@ add_lefs -src $lefs
 ```
 ![p1_invokingOpenLane](https://user-images.githubusercontent.com/110079890/187416741-0dca81c1-e6dc-45e6-b243-7f2cf46c87fb.png)
 
-5. To run synthesis type the following command
+5. To run synthesis, type the following command
 ```
 run_synthesis
 ```
 
 ![p2_run_synth](https://user-images.githubusercontent.com/110079890/187417258-0ecf2284-515e-492a-95c6-3ead84c01a5b.png)
 
-The synthesized netlist can be seen in '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/synthesis'
+The synthesized netlist can be seen in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/synthesis'
 
 The following cells were mapped from the library.
 
@@ -184,14 +184,14 @@ The following cells were mapped from the library.
 
 Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist generated.
 
-6. To run the floorplan and the placement type the following commands
+6. To run the floorplan and the placement, type the following commands
 ```
 run_floorplan
 run_placement
 ```
 ![p4_fp_pl](https://user-images.githubusercontent.com/110079890/187419699-6013b524-91fa-4498-a408-477eee1ea54a.png)
 
-To view the placement type the following command in /home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/placement
+To view the placement, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/placement'
 
 ```
 magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
@@ -199,7 +199,24 @@ magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef re
 ![p7_placement_vsdinv](https://user-images.githubusercontent.com/110079890/187421437-15ffa5d4-8c68-43e6-bfe7-3b22f557882c.png)
 ![p6_placement](https://user-images.githubusercontent.com/110079890/187421492-08e3efe3-cf50-40d0-aa92-35f1da903856.png)
 
-7. 
+7. To run the clock tree synthesis, type the following command
+```
+run_cts
+```
+![p8_cts](https://user-images.githubusercontent.com/110079890/187421918-d8e3801c-c69c-4f44-b55f-0543de5afb1f.png)
+
+The netlist with clock buffers can be seen in the folder  '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/cts'
+
+8. To run the routing, type the following command
+```
+run_routing
+```
+![p9_routing](https://user-images.githubusercontent.com/110079890/187423272-def469b9-10be-4d56-8020-612ef957acf0.png)
+![p10_routing](https://user-images.githubusercontent.com/110079890/187423317-e6ad8e3b-78ee-4823-a9bb-40c5abb8f191.png)
+
+The total area of chip calculated using magic is 2547.061 micro meter sq.
+
+![p11 area](https://user-images.githubusercontent.com/110079890/187424639-929dc655-292f-42a2-926e-e08265e967ee.png)
 
 
 ## Steps for cloning the repository ubuntu
