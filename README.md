@@ -167,20 +167,25 @@ prep -design iiitb_usr
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 ```
-![p1_invokingOpenLane](https://user-images.githubusercontent.com/110079890/187416741-0dca81c1-e6dc-45e6-b243-7f2cf46c87fb.png)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187416741-0dca81c1-e6dc-45e6-b243-7f2cf46c87fb.png">
+</p>
 
 5. To run synthesis, type the following command
 ```
 run_synthesis
 ```
-
-![p2_run_synth](https://user-images.githubusercontent.com/110079890/187417258-0ecf2284-515e-492a-95c6-3ead84c01a5b.png)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187417258-0ecf2284-515e-492a-95c6-3ead84c01a5b.png">
+</p>
 
 The synthesized netlist can be seen in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/synthesis'
 
 The following cells were mapped from the library.
 
-![p3_synth_stat](https://user-images.githubusercontent.com/110079890/187417863-d206d8f5-e0b2-4315-9b2f-3864bce3add7.png)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187417863-d206d8f5-e0b2-4315-9b2f-3864bce3add7.png">
+</p>
 
 The inverter `sky130_vsdinv` is present in the generated netlist.
 
@@ -189,14 +194,17 @@ The inverter `sky130_vsdinv` is present in the generated netlist.
 run_floorplan
 run_placement
 ```
-![p4_fp_pl](https://user-images.githubusercontent.com/110079890/187419699-6013b524-91fa-4498-a408-477eee1ea54a.png)
+<p align="center">
+  <img  src="ttps://user-images.githubusercontent.com/110079890/187419699-6013b524-91fa-4498-a408-477eee1ea54a.png">
+</p>
 
 To view the floorplan, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/floorplan'
 ```
 magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
 ```
-![p5_floorplan](https://user-images.githubusercontent.com/110079890/187430936-69663863-457c-4f8f-aefc-8851d3613b0f.png)
-
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187430936-69663863-457c-4f8f-aefc-8851d3613b0f.png">
+</p>
 
 To view the placement, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/placement'
 
