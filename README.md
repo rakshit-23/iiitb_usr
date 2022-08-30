@@ -179,15 +179,15 @@ run_synthesis
   <img  src="https://user-images.githubusercontent.com/110079890/187417258-0ecf2284-515e-492a-95c6-3ead84c01a5b.png">
 </p>
 
-The synthesized netlist can be seen in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/synthesis'
+  The synthesized netlist can be seen in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/synthesis'
 
-The following cells were mapped from the library.
+  The following cells were mapped from the library.
 
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187417863-d206d8f5-e0b2-4315-9b2f-3864bce3add7.png">
 </p>
 
-The inverter `sky130_vsdinv` is present in the generated netlist.
+  The inverter `sky130_vsdinv` is present in the generated netlist.
 
 6. To run the floorplan and the placement, type the following commands
 ```
@@ -198,7 +198,7 @@ run_placement
   <img  src="ttps://user-images.githubusercontent.com/110079890/187419699-6013b524-91fa-4498-a408-477eee1ea54a.png">
 </p>
 
-To view the floorplan, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/floorplan'
+  To view the floorplan, type the following command in the folder    '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/floorplan'
 ```
 magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
 ```
@@ -207,7 +207,7 @@ magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef re
   <img  src="https://user-images.githubusercontent.com/110079890/187430936-69663863-457c-4f8f-aefc-8851d3613b0f.png">
 </p>
 
-To view the placement, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/placement'
+  To view the placement, type the following command in the folder '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/placement'
 
 ```
 magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
@@ -228,7 +228,7 @@ run_cts
   <img  src="https://user-images.githubusercontent.com/110079890/187421918-d8e3801c-c69c-4f44-b55f-0543de5afb1f.png">
 </p>
 
-The netlist with clock buffers can be seen in the folder  '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/cts'
+  The netlist with clock buffers can be seen in the folder  '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/cts'
 
 8. To run the routing, type the following command
 ```
@@ -243,7 +243,7 @@ run_routing
   <img  src="https://user-images.githubusercontent.com/110079890/187423317-e6ad8e3b-78ee-4823-a9bb-40c5abb8f191.png">
 </p>
 
-The total area of chip calculated using magic is 2547.061 micro meter sq.
+  The total area of chip calculated using magic is 2547.061 micro meter sq.
 
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187424639-929dc655-292f-42a2-926e-e08265e967ee.png">
