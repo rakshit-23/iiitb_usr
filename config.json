@@ -1,0 +1,22 @@
+{
+    "DESIGN_NAME": "iiitb_usr",
+    "VERILOG_FILES": "dir::src/iiitb_usr.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
+    "CLOCK_PERIOD": 65,
+    "pdk::sky130*": {
+        "SYNTH_MAX_FANOUT": 6,
+        "scl::sky130_fd_sc_hd": {
+            "FP_CORE_UTIL": 20
+           
+        }
+    },
+   "LIB_SYNTH": "dir::src/sky130_fd_sc_hd__typical.lib",
+"LIB_FASTEST": "dir::src/sky130_fd_sc_hd__fast.lib",
+"LIB_SLOWEST": "dir::src/sky130_fd_sc_hd__slow.lib",
+"LIB_TYPICAL": "dir::src/sky130_fd_sc_hd__typical.lib",
+"TEST_EXTERNAL_GLOB": "dir::../iiitb_usr/src/*"
+
+
+}
