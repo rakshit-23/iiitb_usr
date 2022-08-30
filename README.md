@@ -150,27 +150,39 @@ $   ./configure
 $   sudo make
 $   sudo make install
 ```
-To generate layout
+## Running the design in OpenLane
+To run the design in OpenLane:
+1. Create a folder named iiitb_usr in designs folder of OpenLane.
+
+2. Create a src folder inside the iiitb_usr folder.
+
+3. Copy the verilog file (iiitb_usr.v) , extracted lef file of inverter (sky130_vsdinv) and the library files (sky130_fd_sc_hd__fast.lib, sky130_fd_sc_hd__slow.lib, sky130_fd_sc_hd__typical.lib) inside the folder 'OpenLane/designs/iiitb_usr/src'.
+
+4. Then go to OpenLane folder and type the following commands to run OpenLane
+
 ```
-$   cd OpenLane/
-$   cd designs/
-$   mkdir iiitb_usr
-$   cd iiitb_usr/
-$   wget https://raw.githubusercontent.com/rakshit-23/iiitb_usr/main/config.json
-$   mkdir src
-$   cd src/
-$   wget https://raw.githubusercontent.com/rakshit-23/iiitb_usr/main/iiitb_usr.v
-$   cd ../../../
-$   sudo make mount
-$   ./flow.tcl -design iiitb_pwm_gen
+sudo make mount
+./flow.tcl -interactive
+prep -design iiitb_usr
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
+![p1_invokingOpenLane](https://user-images.githubusercontent.com/110079890/187416741-0dca81c1-e6dc-45e6-b243-7f2cf46c87fb.png)
+
+5. To run synthesis type the following command
+```
+run_synthesis
 ```
 
-### Generated layout using Magic 
-<p align="center">
-  <img width="800" height="700" src="https://user-images.githubusercontent.com/110079890/186833541-c5457f0f-eb92-4589-93be-4d4895be3aef.png">
-</p>
+![p2_run_synth](https://user-images.githubusercontent.com/110079890/187417258-0ecf2284-515e-492a-95c6-3ead84c01a5b.png)
 
+The synthesized netlist can be seen in '/home/rakshit/OpenLane/designs/iiitb_usr/runs/RUN_2022.08.30_09.15.49/results/synthesis'
 
+The following cells were mapped from the library.
+![p3_synth_stat](https://user-images.githubusercontent.com/110079890/187417863-d206d8f5-e0b2-4315-9b2f-3864bce3add7.png)
+Here, we notice that our custom cell `sky130_vsdinv` is displayed in the netlist generated.
+
+6. To run the floorplan and the placement type the following commands
 
 
 ## Steps for cloning the repository ubuntu
