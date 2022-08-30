@@ -271,3 +271,14 @@ $  gtkwave iiitb_usr_out.vcd
 - Rakshit Bhatia- rakshit2325@gmail.com
 - Kunal Ghosh-  kunalghosh@gmail.com
 
+## References
+1. GeeksforGeeks, "Universal Shift Register" 
+https://www.geeksforgeeks.org/universal-shift-register-in-digital-logic/#:~:text=A%20bidirectional%20shift%20register%20is,register%20with%20parallel%20load%20provision.&text=A%20n%2Dbit%20universal%20shift,n%204%C3%971%20multiplexers.
+
+2. Yosys Open Synthesis Suite
+https://yosyshq.net/yosys/  
+
+3. SkyWater, "SKY130 PDK DOCUMENTATION" https://skywater-pdk.readthedocs.io/en/main/
+
+4. Open Circuit Design, "Magic install" http://opencircuitdesign.com/magic/install.html
+
