@@ -150,7 +150,28 @@ $   ./configure
 $   sudo make
 $   sudo make install
 ```
-## 10. Running the design in OpenLane using interactive mode
+## 10. Extracting lef file from inverter layout
+Our objective is to extract LEF from the given layout of inverter in standard format. To do so follow the following steps:
+1. Clone the vsdstdcelldesign github using the following command
+
+```git clone https://github.com/nickson-jose/vsdstdcelldesign)```
+
+2. Copy the sky130A.tech from the folder /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic and paste it into the cloned directory.
+
+3. Open the inverter magic layout using the command
+``` magic -T sky130A.tech sky130_inv.mag ```
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187485641-e9eb45c9-6003-4e65-a6f4-eab80ab8712a.png">
+</p>
+
+4. For every layer of inverter which needs to be turned into a port, select that particular layer by pressing s key on keyboard and then select Edit >> Text.
+
+5. Select the sticky checkbox in attach to layer option, uncheck default option and enter locali layer for input and output ports. Also select the enable checkbox and enter 0 and 1 as portnumber for input and output port respectively.
+
+
+6. For power and ground ports, enter metal1 layer and enter 0 and 3 as portnumber for power and ground ports respectively
+
+## 11. Running the design in OpenLane using interactive mode
 To run the design in OpenLane:
 1. Create a folder named iiitb_usr in designs folder of OpenLane.
 
@@ -250,7 +271,7 @@ run_routing
 </p>
 
 
-## 11. Steps for cloning the repository in ubuntu
+## 12. Steps for cloning the repository in ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 ```
 $  sudo apt install git
