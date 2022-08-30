@@ -202,6 +202,7 @@ To view the floorplan, type the following command in the folder '/home/rakshit/O
 ```
 magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
 ```
+
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187430936-69663863-457c-4f8f-aefc-8851d3613b0f.png">
 </p>
@@ -211,8 +212,13 @@ To view the placement, type the following command in the folder '/home/rakshit/O
 ```
 magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_usr.def &
 ```
-![p7_placement_vsdinv](https://user-images.githubusercontent.com/110079890/187421437-15ffa5d4-8c68-43e6-bfe7-3b22f557882c.png)
-![p6_placement](https://user-images.githubusercontent.com/110079890/187421492-08e3efe3-cf50-40d0-aa92-35f1da903856.png)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187421437-15ffa5d4-8c68-43e6-bfe7-3b22f557882c.png">
+</p>
+
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187421492-08e3efe3-cf50-40d0-aa92-35f1da903856.png">
+</p>
 
 7. To run the clock tree synthesis, type the following command
 ```
