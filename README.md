@@ -187,6 +187,36 @@ Our objective is to extract LEF from the given layout of inverter in standard fo
   <img  src="https://user-images.githubusercontent.com/110079890/187486477-d2f411e1-469c-4af8-bb80-0c7f08991b83.png">
 </p>
 
+7. Define the purpose of each port
+
+Select port A in magic and write the following commands in tkcon:
+```
+port class input
+port use signal
+```
+Select Y area in magic and write the following commands in tkcon:
+```
+port class output
+port use signal
+```
+Select VPWR area in magic and write the following commands in tkcon:
+```
+port class inout
+port use power
+```
+
+Select VGND area in magic and write the following commands in tkcon:
+```
+port class inout
+port use ground
+```
+
+8. Generate the lef file by typing the following command
+```
+lef write
+```
+This generates sky130_vsdinv.lef file.
+
 ## 11. Running the design in OpenLane using interactive mode
 To run the design in OpenLane:
 1. Create a folder named iiitb_usr in designs folder of OpenLane.
