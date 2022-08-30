@@ -250,7 +250,7 @@ run_routing
 </p>
 
 
-## 11. Steps for cloning the repository ubuntu
+## 11. Steps for cloning the repository in ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 ```
 $  sudo apt install git
