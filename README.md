@@ -266,6 +266,7 @@ $  gtkwave iiitb_usr_out.vcd
 
 ## Acknowledgements
 - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+- Madhav Rao, Associate Professor, IIIT Bangalore
 
 ## Contact information
 - Rakshit Bhatia- rakshit2325@gmail.com
@@ -282,3 +283,4 @@ https://yosyshq.net/yosys/
 
 4. Open Circuit Design, "Magic install" http://opencircuitdesign.com/magic/install.html
 
+5. GTKWave http://gtkwave.sourceforge.net/
