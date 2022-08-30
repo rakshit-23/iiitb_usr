@@ -332,7 +332,7 @@ $  ./a.out
 $  gtkwave iiitb_usr_out.vcd
 ```
 
-## Authour
+## Author
 - Rakshit Bhatia, M.Tech student at IIIT Bangalore.
 
 ## Acknowledgements
