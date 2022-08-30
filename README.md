@@ -155,14 +155,14 @@ Our objective is to extract LEF from the given layout of inverter in standard fo
 1. Clone the vsdstdcelldesign github using the following command
 
 ```
-$ git clone https://github.com/nickson-jose/vsdstdcelldesign)
+$   git clone https://github.com/nickson-jose/vsdstdcelldesign)
 ```
 
 2. Copy the sky130A.tech from the folder /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic and paste it into the cloned directory.
 
 3. Open the inverter magic layout using the command
 ``` 
-$ magic -T sky130A.tech sky130_inv.mag
+$   magic -T sky130A.tech sky130_inv.mag
 ```
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187485641-e9eb45c9-6003-4e65-a6f4-eab80ab8712a.png">
@@ -232,11 +232,11 @@ To run the design in OpenLane:
 4. Then go to OpenLane folder and type the following commands to run OpenLane
 
 ```
-sudo make mount
-./flow.tcl -interactive
-prep -design iiitb_usr
-set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
-add_lefs -src $lefs
+$   sudo make mount
+$   ./flow.tcl -interactive
+%   prep -design iiitb_usr
+%   set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+%   add_lefs -src $lefs
 ```
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187416741-0dca81c1-e6dc-45e6-b243-7f2cf46c87fb.png">
@@ -244,7 +244,7 @@ add_lefs -src $lefs
 
 5. To run synthesis, type the following command
 ```
-run_synthesis
+%   run_synthesis
 ```
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187417258-0ecf2284-515e-492a-95c6-3ead84c01a5b.png">
@@ -262,8 +262,8 @@ run_synthesis
 
 6. To run the floorplan and the placement, type the following commands
 ```
-run_floorplan
-run_placement
+%   run_floorplan
+%   run_placement
 ```
 <p align="center">
   <img  src="ttps://user-images.githubusercontent.com/110079890/187419699-6013b524-91fa-4498-a408-477eee1ea54a.png">
@@ -293,7 +293,7 @@ magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef re
 
 7. To run the clock tree synthesis, type the following command
 ```
-run_cts
+%   run_cts
 ```
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/187421918-d8e3801c-c69c-4f44-b55f-0543de5afb1f.png">
@@ -303,7 +303,7 @@ run_cts
 
 8. To run the routing, type the following command
 ```
-run_routing
+%   run_routing
 ```
 
 <p align="center">
