@@ -168,8 +168,24 @@ Our objective is to extract LEF from the given layout of inverter in standard fo
 
 5. Select the sticky checkbox in attach to layer option, uncheck default option and enter locali layer for input and output ports. Also select the enable checkbox and enter 0 and 1 as portnumber for input and output port respectively.
 
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187486062-c4c396d8-2d53-4012-ae61-45a2cbee895e.png">
+</p>
 
-6. For power and ground ports, enter metal1 layer and enter 0 and 3 as portnumber for power and ground ports respectively
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187486071-5458d7c8-88c3-4a95-bf3c-9f0fd1c753ae.png">
+</p>
+
+
+6. For power and ground ports, enter metal1 layer and enter 0 and 3 as portnumber for power and ground ports respectively.
+
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187486485-1648a301-3a17-4c76-8767-bacbf829da79.png">
+</p>
+
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187486477-d2f411e1-469c-4af8-bb80-0c7f08991b83.png">
+</p>
 
 ## 11. Running the design in OpenLane using interactive mode
 To run the design in OpenLane:
