@@ -245,7 +245,9 @@ run_routing
 
 The total area of chip calculated using magic is 2547.061 micro meter sq.
 
-![p11 area](https://user-images.githubusercontent.com/110079890/187424639-929dc655-292f-42a2-926e-e08265e967ee.png)
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187424639-929dc655-292f-42a2-926e-e08265e967ee.png">
+</p>
 
 
 ## Steps for cloning the repository ubuntu
