@@ -234,7 +234,11 @@ The netlist with clock buffers can be seen in the folder  '/home/rakshit/OpenLan
 ```
 run_routing
 ```
-![p9_routing](https://user-images.githubusercontent.com/110079890/187423272-def469b9-10be-4d56-8020-612ef957acf0.png)
+
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/187423272-def469b9-10be-4d56-8020-612ef957acf0.png">
+</p>
+
 ![p10_routing](https://user-images.githubusercontent.com/110079890/187423317-e6ad8e3b-78ee-4823-a9bb-40c5abb8f191.png)
 
 The total area of chip calculated using magic is 2547.061 micro meter sq.
