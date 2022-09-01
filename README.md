@@ -239,7 +239,7 @@ $   ./flow.tcl -interactive
 %   add_lefs -src $lefs
 ```
 <p align="center">
-  <img  src="https://user-images.githubusercontent.com/110079890/187416741-0dca81c1-e6dc-45e6-b243-7f2cf46c87fb.png">
+  <img  src="https://user-images.githubusercontent.com/110079890/187896319-eed1ff22-7adb-4f8f-adf9-20fdbf6e28bd.png">
 </p>
 
 5. To run synthesis, type the following command
