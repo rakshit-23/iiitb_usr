@@ -314,13 +314,6 @@ $   magic -T /home/rakshit/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech le
   <img  src="https://user-images.githubusercontent.com/110079890/187423317-e6ad8e3b-78ee-4823-a9bb-40c5abb8f191.png">
 </p>
 
-  The total area of chip calculated using magic is 2547.061 micro meter sq.
-
-<p align="center">
-  <img  src="https://user-images.githubusercontent.com/110079890/187424639-929dc655-292f-42a2-926e-e08265e967ee.png">
-</p>
-
-
 ## 12. Steps for cloning the repository in ubuntu
 To clone the repository and download the netlist files for simulation, enter the following commands in your terminal:
 ```
