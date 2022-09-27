@@ -380,6 +380,36 @@ The library setup time is 0.09 ns and the data arrival time (delay) is 1.58 ns.
 
 The minimum time period of the clock is setup time + arrival time= 0.09 + 1.58 ns = 1.67 ns. Therefore the maximum clock frequency is 598.8024 MHz.
 
+### 13.4 Flip-flop to Standard cell ratio
+
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/192632884-d1d33d24-7b20-4961-b3b4-cbfb523cbd93.png">
+</p>
+
+```
+Flop ratio = Number of D Flip flops 
+             ______________________
+             Total Number of cells
+```
+
+Number of flip-flops in the design = 8
+
+Number of cells in the design = 45
+
+Flip-flop to Standard cell ratio = 8/45 = 0.1778 = 17.78%
+
+### 13.5 Power Consumed
+
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/192633618-2ae30f6f-493e-43d8-94c9-aa60b64992b1.png">
+</p>
+
+The total power consumed by the design is 4.11 micro Watts
+ - Internal Power = 2.31 micro Watt
+ - Switching Power = 1.8 micro Watt
+ - Leakage Power = 0.188 nano Watt
+
+
 ## Author
 - Rakshit Bhatia, M.Tech student at IIIT Bangalore.
 
