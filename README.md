@@ -333,16 +333,18 @@ $  gtkwave iiitb_usr_out.vcd
 ```
 ## 13. RESULTS FOR MIDTERM EXAMINATIONS
 ### 13.1 Post-synthesis Gate count for the design
-The post-synthesis gate count for the design is 45 cells.
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/192626345-ac1a992d-a099-4d43-bfcf-7ed89b1aab4d.png">
 </p>
+The post-synthesis gate count for the design is 45 cells.
+
 
 ### 13.2 Area of the design using box command
-The area of the design is 4408.716 micro meter sq.
 <p align="center">
   <img  src="https://user-images.githubusercontent.com/110079890/192626695-503e09b9-4d90-40fb-9922-58edc787cef0.png">
 </p>
+The area of the design is 4408.716 micro meter sq.
+
 
 ### 13.3 Performance achieved for the design using OpenSTA
 The netlist produced after the clock tree synthesis is taken into account to determine the chip's performance. The netlist contains 8 flip-flops. Using the OpenSTA tool, the slack for each register to register path is calculated and the path with worst slack is used to calculated the performance of the design.
