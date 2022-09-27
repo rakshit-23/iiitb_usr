@@ -331,7 +331,47 @@ $  iverilog iiitb_usr.v iiitb_usr_tb.v
 $  ./a.out
 $  gtkwave iiitb_usr_out.vcd
 ```
+## 13. RESULTS FOR MIDTERM EXAMINATIONS
+### 13.1 Post-synthesis Gate count for the design
+The post-synthesis gate count for the design is 45 cells.
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/192626345-ac1a992d-a099-4d43-bfcf-7ed89b1aab4d.png">
+</p>
 
+### 13.2 Area of the design using box command
+The area of the design is 4408.716 micro meter sq.
+<p align="center">
+  <img  src="https://user-images.githubusercontent.com/110079890/192626695-503e09b9-4d90-40fb-9922-58edc787cef0.png">
+</p>
+
+### 13.3 Performance achieved for the design using OpenSTA
+The netlist produced after the clock tree synthesis is taken into account to determine the chip's performance. The netlist contains 8 flip-flops. Using the OpenSTA tool, the slack for each register to register path is calculated and the path with worst slack is used to calculated the performance of the design.
+
+To invoke OpenSTA type the following commands in the terminal opened in the OpenLANE directory
+```
+$ sudo make mount
+  sta
+```
+Type the following commands to calculate the performance of the design in OpenSTA
+```
+read_liberty -min /home/rakshit/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v56.lib
+
+read_liberty -max /home/rakshit/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v56.lib
+
+read_verilog /home/rakshit/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_usr.v
+
+link_design iiitb_usr
+
+read_sdc /home/rakshit/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_usr.sdc
+
+read_spef /home/rakshit/OpenLane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/iiitb_usr.spef
+
+create_clock -name clock -period 10 {clock}
+
+set_propagated_clock clock
+
+report_checks -from _71_ -to _70_
+```
 ## Author
 - Rakshit Bhatia, M.Tech student at IIIT Bangalore.
 
