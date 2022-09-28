@@ -371,9 +371,8 @@ report_checks -from _71_ -to _70_
   <img  src="https://user-images.githubusercontent.com/110079890/192630532-ee61c8ad-0c58-4ae5-a192-da0c2ff4a36d.png">
 </p>
 
-The library setup time is 0.09 ns and the data arrival time (delay) is 1.58 ns. 
-
-The minimum time period of the clock is setup time + arrival time= 0.09 + 1.58 ns = 1.67 ns. Therefore the maximum clock frequency is 598.8024 MHz.
+The library setup time is 0.09 ns and the data arrival time (delay) is 1.58 ns. The minimum slack of the design for clock period of 10 ns is 8.56 ns.
+Therefore the maximum clock frequency of the design is 1/(10-8.56)=694.44 MHz.
 
 ### 13.4 Flip-flop to Standard cell ratio
 
